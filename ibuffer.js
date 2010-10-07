@@ -33,9 +33,9 @@ ibuffer_generator.prototype = {
                 let (li = g.element("li", "class", "ibuffer-buffer"),
                      a = g.element("a", "class", "ibuffer-buffer-link",
                                    "href", "javascript:"),
-                     title = g.element("span", "class", "ibuffer-buffer-title"),
-                     size  = g.element("span", "class", "ibuffer-buffer-size"),
-                     desc  = g.element("span", "class", "ibuffer-buffer-desc"))
+                     title = g.element("span", "class", "ibuffer-buffer-title ibuffer-ellipsis"),
+                     size  = g.element("span", "class", "ibuffer-buffer-size ibuffer-ellipsis"),
+                     desc  = g.element("span", "class", "ibuffer-buffer-desc ibuffer-ellipsis"))
                 {
                     a.addEventListener("click", function (ev) {
                         switch_to_buffer(g.buffer.window, b);
